@@ -13,6 +13,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "Hello World!"); // Define a simple endpoint
 
 app.Run();
