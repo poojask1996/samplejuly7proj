@@ -11,7 +11,7 @@
         },
         "extensions": [
             "ms-dotnettools.csharp",
-            "ms-vscode.azurecli"
+            "ms-vscode.azurecli" // Azure CLI extension for managing Azure resources
         ]
         }
     },
