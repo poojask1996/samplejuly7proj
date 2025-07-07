@@ -1,7 +1,7 @@
 {
   "name": "C# Dev Container",
   "build": {
-    "dockerfile": "Dockerfile",
+    "dockerfile": "Dockerfile", // Reference to the Dockerfile in the same directory
     "context": "."
   },
  "customizations": {
@@ -16,7 +16,7 @@
         }
     },
     "forwardPorts": [5000, 5001],
-    "postCreateCommand": "dotnet restore ./WeatherApi"
+    "postCreateCommand": "dotnet restore ./WeatherApi" // Restore dependencies for the WeatherApi project
     
  }
 
