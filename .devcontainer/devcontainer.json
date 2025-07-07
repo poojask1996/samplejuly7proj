@@ -1,0 +1,23 @@
+{
+  "name": "C# Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+ "customizations": {
+    "vscode": {
+        "settings": {
+            "terminal.integrated.defaultProfile.linux": "bash"
+        },
+        "extensions": [
+            "ms-dotnettools.csharp",
+            "ms-vscode.azurecli"
+        ]
+
+        }
+    },
+    "forwardPorts": [5000, 5001],
+    "postCreateCommand": "dotnet restore ./WeatherApi"
+    
+ }
+
